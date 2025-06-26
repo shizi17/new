@@ -1,0 +1,85 @@
+
+body {
+  background-color: #1b1128;
+  color: #00ff90;
+  font-family: 'Segoe UI', sans-serif;
+  scroll-behavior: smooth;
+  margin: 0;
+  padding: 0;
+}
+nav {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background: #5e17eb;
+  padding: 1rem;
+  z-index: 1000;
+}
+nav ul {
+  display: flex;
+  justify-content: center;
+  list-style: none;
+  gap: 15px;
+  padding: 0;
+  margin: 0;
+}
+nav a {
+  color: #00ff90;
+  text-decoration: none;
+  font-weight: bold;
+}
+.profile {
+  display: block;
+  margin: 30px auto;
+  width: 150px;
+  border-radius: 50%;
+  border: 3px solid #00ff90;
+}
+section {
+  padding: 100px 20px 50px;
+  opacity: 0;
+  transform: translateY(40px);
+  transition: all 0.8s ease-out;
+}
+section.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+.project-card {
+  background: #2e1c4d;
+  color: #00ff90;
+  border-radius: 10px;
+  padding: 1rem;
+  margin: 1rem 0;
+  text-align: center;
+}
+.project-card img {
+  max-width: 100%;
+  border-radius: 8px;
+  margin-bottom: 1rem;
+}
+.button-group button {
+  margin: 5px;
+  padding: 10px 15px;
+  background: #00ff90;
+  color: #1b1128;
+  border: none;
+  border-radius: 5px;
+  font-weight: bold;
+}
+form input, form textarea {
+  width: 100%;
+  margin-bottom: 10px;
+  padding: 10px;
+  border-radius: 5px;
+  border: none;
+}
+form button {
+  background: #00ff90;
+  border: none;
+  padding: 10px 15px;
+  font-weight: bold;
+  color: #1b1128;
+  border-radius: 5px;
+  cursor: pointer;
+}
